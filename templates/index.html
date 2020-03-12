@@ -1,0 +1,627 @@
+{% extends "base.html" %}
+
+{% block body %}
+<body class="pace-on pace-double-spinner">
+  <div class="pace-overlay"></div>
+  <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an 
+    <strong>outdated</strong> browser. 
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> 
+    to improve your experience.</p>
+  <![endif]-->
+  <div class="nav nav-sticky nav-layout-logo-l-menu-r os-animation"
+       data-os-animation="fadeIn"
+       data-os-animation-delay=".05s">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="#home" class="nav-smooth-scroll" data-offset="100"> 
+        <img src="{{ get_url(path="assets/images/logo.png") }}" alt="Allan Ganas Soobiah"> 
+        </a>
+      </div>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#"> <span></span> </a>
+      </div>
+      <nav class="nav-menu">
+        {% include "_nav.html" %} 
+      </nav>
+    </div>
+  </div>
+  {% block home %}
+  <div class="section" id="home">
+    <div class="section-background">
+      <div class="section-bg-image section-bg-image-size-md-100 section-bg-image-position-xs-top demo-bg-image-1 section-bg-image-paralax"></div>
+    </div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 text-xs-center os-animation text-xs-light text-xs-center"
+               data-os-animation="fadeIn"
+               data-os-animation-delay=".4s">
+            <h1 class="display-1 m-md-t-20 m-xs-t-10 opacity-8 text-shadow">
+             Allan Ganas Soobiah
+            </h1>
+            <h2 class="text-xs-center os-animation"
+                data-os-animation="fadeIn"
+                data-os-animation-delay=".3s">
+            Welcome to the Blog!</h2>
+            <div class="row">
+              <div class="col-md-12 os-animation"
+                   data-os-animation="fadeIn"
+                   data-os-animation-delay=".5s">
+                <input id="name" 
+                        name="name" 
+                        class="form-control shadow-0 shadow-focus-2 transition" 
+                        placeholder="Search this blog" 
+                        type="text">
+                </div>
+            </div>
+              <a href="#" 
+                  class="btn btn-danger m-t-3 os-animation m-b-4 shadow-2 shadow-hover-4" 
+                  data-os-animation="fadeIn" 
+                  data-os-animation-delay=".7s">
+              Search
+              </a>
+          </div>
+        </div>
+        
+        <div class="row m-b-15" id="about">
+          <div class="col-md-4">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation m-b-3" data-os-animation="fadeInUp" data-os-animation-delay=".3s">
+              <div class="card-img-container">
+              <img class="card-img" src="assets/images/allan.jpg" alt="Card image">
+              </div>
+              <div class="card-block">
+                <h3 class="card-title"><a href="about/ganas">Allan Ganas Soobiah</a></h3>
+                <p class="card-text">The life of one of the oldest living memorable South African Indians who lived through the apartheid era.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation m-b-3" data-os-animation="fadeInUp" data-os-animation-delay=".4s">
+              <div class="card-img-container"> <img class="card-img" src="assets/images/cashane.jpg" alt="Card image"> </div>
+              <div class="card-block">
+               <h3 class="card-title"><a href="about/cashane">Cashane Soobiah</a></h3>
+                <p class="card-text">In loving memory of a star. Death leaves a Heartache no one can Heal. Love leaves a Memory no one Steal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation m-b-3" data-os-animation="fadeInUp" data-os-animation-delay=".5s">
+              <div class="card-img-container"> <img class="card-img" src="assets/images/soweto1.jpg" alt="Card image"> </div>
+              <div class="card-block">
+               <h3 class="card-title"><a href="about/soweto1gp">Soweto 1 GP</a></h3>
+                <p class="card-text">The story about the vehicle and plate that changed South Africa. The custom plate with a story to tell.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock home %}
+  {% block news %}
+  <div class="section" id="news">
+    <div class="section-background">
+      <div class="section-bg-image section-bg-image-size-md-100 demo-bg-image-2 section-bg-image-paralax section-bg-image-position-xs-top">        
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row m-b-15">
+          <div class="col-md-12">
+            <h1 class="h1 heading-bordered text-capitalize os-animation m-t-15 m-b-8" 
+                data-os-animation="fadeIn" 
+                data-os-animation-delay=".3s">
+             <small class="text-muted font-italic text-xs-light">Our</small>
+             News
+            </h1> 
+          </div>
+          <div class="col-md-5">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation" 
+                 data-os-animation="fadeIn" 
+                 data-os-animation-delay=".4s">
+              <div class="card-img-container"> 
+                <img class="card-img" src="{{ get_url(path="assets/images/funeral-winnie.jpg") }}" alt="Winnies Funeral">
+              </div>
+              <div class="card-block">
+                <h3 class="card-title">
+                  <a href="event/winnie">Mama Winnies Funeral</a>
+                </h3>
+                <h6 class="card-subtitle font-italic text-muted">On
+                  <a href="event/winnie">1st</a> of April 2018
+                </h6> 
+              </div>
+              <div class="card-block">
+                <p class="card-text">
+                On the 1st of April 2018, Mr. Nate, one of the filming crew members and myself 
+                arranged a meeting at Lakeside Mall Wimpy for us to discuss the filming of a 
+                documentary of myself and Mrs. Winne Mandela about the importance of our 
+                contribution to the freedom and democracy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation" 
+                 data-os-animation="fadeIn" 
+                 data-os-animation-delay=".5s">
+              <div class="card-block">
+                <blockquote class="card-blockquote blockquote">
+                  <p>
+                  No one is born hating another person because of the color of his skin, 
+                  or his background, or his religion. 
+                  People must learn to hate, and if they can learn to hate, they can be taught love, 
+                  for love comes more naturally to the human heart than its opposite.
+                  </p>
+                  <footer class="blockquote-footer">
+                    Nelson Mandela 
+                  <cite title="Source Title">Long Walk to Freedom</cite> 
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card shadow-8 shadow-hover-16 transition os-animation" 
+                     data-os-animation="fadeIn" 
+                     data-os-animation-delay=".6s">
+                  <div class="card-img-container">
+                    <img class="card-img" src="{{ get_url(path="assets/images/kitty-nagan.jpg") }}" alt="Kitty Nagan">
+                  </div>
+                  <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-fade-to-top">
+                    <h4 class="card-title">
+                      <a href="event/kitty-nagan">With Kitty Nagan</a>
+                    </h4>
+                    <h6 class="card-subtitle font-italic">On
+                      <a href="event/kitty-nagan">Indians</a> 
+                      in South Africa
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card shadow-8 shadow-hover-16 transition os-animation" 
+                     data-os-animation="fadeIn" 
+                     data-os-animation-delay=".7s">
+                  <div class="card-img-container">
+                    <img class="card-img" src="{{ get_url(path="assets/images/mzansi-insider.jpg") }}" alt="Ganas on Mzansi Insider">
+                  </div>
+                  <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-fade-to-top">
+                    <h4 class="card-title">
+                     <a href="event/mzansi-insider">Interview</a>
+                    </h4>
+                    <h6 class="card-subtitle font-italic">On
+                     <a href="event/mzansi-insider">Mzansi Insider</a>
+                     about Soweto 1 GP
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock news %}
+  {% block goals %}
+  <div class="section" id="goals">
+    <div class="section-background">
+      <div class="section-bg-image section-bg-image-size-md-cover section-bg-image-position-xs-middle demo-bg-image-3 opacity-4 section-bg-image-paralax"></div>
+    </div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="h1 heading-bordered heading-bordered-reversed text-capitalize m-t-15 m-b-8 os-animation" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+             <small class="text-muted font-italic text-xs-light">Join our Collective</small> 
+                       Effort
+            </h1>
+          </div>
+          
+          <div class="col-md-6 ">
+            <div class="card card-hero shadow-8 shadow-hover-16 transition os-animation  m-b-15 text-xs-center" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+              <div class="card-block">
+                <h2 class="card-title m-b-2">
+                 <a href="#">Elementary Coding School</a>
+                </h2>
+                <p class="card-text lead">
+                  Picking up from the latest SONA annoncement, 
+                  a Coding School for the less fortunate in developing 
+                  communities in and around South Africa.
+                </p>
+                <div class="progress-wrapper m-t-3">
+                  <progress class="progress" value="48" max="100"></progress> 
+                  <i class="fa fa-map-marker progress-indicator"></i>
+                  <div class="progress-progress clearfix"> 
+                    <span class="pull-xs-left text-muted">R175'340.00 raised</span> 
+                    <span class="pull-xs-right font-weight-700">R350'000 total</span> 
+                  </div>
+                </div>
+                <div class="text-xs-center">
+                  <a href="#" class="btn btn-primary m-t-3 shadow-2 shadow-hover-4">
+                   Donate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 ">
+            <div class="card card-hero shadow-8 shadow-hover-16 transition os-animation  m-b-15 text-xs-center" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+              <div class="card-block">
+                <h2 class="card-title m-b-2">
+                 <a href="#">Handicapped Sowetans Fund</a>
+                </h2>
+                <p class="card-text lead">
+                  A fund to support the most neglected in the township of Soweto.
+                </p>
+                <div class="progress-wrapper m-t-3">
+                  <progress class="progress" value="48" max="100"></progress> 
+                  <i class="fa fa-map-marker progress-indicator"></i>
+                  <div class="progress-progress clearfix"> 
+                    <span class="pull-xs-left text-muted">R1'734.00 raised</span> 
+                    <span class="pull-xs-right font-weight-700">R350'000.00 total</span> 
+                  </div>
+                </div>
+                <div class="text-xs-center">
+                  <a href="#" class="btn btn-primary m-t-3 shadow-2 shadow-hover-4">
+                   Donate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock goals %}
+  {% block section %}
+  <div class="section">
+    <div class="section-bg-image section-bg-image-size-md-cover demo-bg-image-4"></div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 p-y-15 text-xs-light text-xs-center">
+            <blockquote class="blockquote blockquote-lg">
+              <p>
+              Out of the night that covers me, black as the pit from pole to pole </br>
+				I thank whatever gods may be, for my unconquerable soul. </br>
+				In fell clutch of circumstance, I have not winced nor cried aloud</br>
+				Under the bludgeonings of fate, my head is bloody, but unbowed.
+              </p>
+              <footer class="blockquote-footer text-xs-light">
+                (Invictus)
+                <cite title="Source Title">Nelson Mandela</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-background">
+      <div class="section-bg-image section-bg-image-size-md-cover section-bg-image-position-xs-middle demo-bg-image-6 opacity-3 section-bg-image-paralax"></div>
+    </div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row m-b-15">
+          <div class="col-md-12">
+            <h1 class="h1 heading-bordered text-capitalize m-t-15 m-b-8 os-animation" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+                            <small class="text-muted font-italic text-xs-light">Reconstructing</small> their lifes.
+                        </h1> </div>
+          <div class="col-md-3">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation text-xs-center" data-os-animation="fadeIn" data-os-animation-delay=".2s">
+              <div class="card-block">
+                <h4 class="card-title m-b-2">
+                                    <a href="#">Gardening in Soweto.</a>
+                                </h4>
+                <p class="card-text">A small project to promote home gardening projects throughout Soweto.</p>
+                <div class="progress-wrapper m-t-3">
+                  <progress class="progress" value="48" max="100"></progress> <i class="fa fa-map-marker progress-indicator"></i>
+                  <div class="progress-progress clearfix"> <span class="pull-xs-left text-muted">R934 raised</span> <span class="pull-xs-right font-weight-700">R4000 goal</span> </div>
+                </div>
+                <div class="text-xs-center"> <a href="#" class="btn btn-primary m-t-3  shadow-2 shadow-hover-4">
+                                        Donate
+                                    </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation text-xs-center" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+              <div class="card-img-container"> <img class="card-img" src="assets/images/560x350.png" alt="Card image"> </div>
+              <div class="card-block">
+                <h3 class="card-title m-b-2">
+                                    <a href="#">Volunteering for Support.</a>
+                                </h3>
+                <p class="card-text">A fund to look for unemployed volunteers who want to be part of the change and not the problem.</p>
+                <div class="progress-wrapper m-t-3">
+                  <progress class="progress" value="20" max="100"></progress> <i class="fa fa-map-marker progress-indicator"></i>
+                  <div class="progress-progress clearfix"> <span class="pull-xs-left text-muted">2 signed</span> <span class="pull-xs-right font-weight-700">10 needed</span> </div>
+                </div>
+                <div class="text-xs-center"> <a href="#" class="btn btn-primary m-t-3 shadow-2 shadow-hover-4">
+                                        Volunteer
+                                    </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation text-xs-center" data-os-animation="fadeIn" data-os-animation-delay=".4s">
+              <div class="card-block">
+                <h4 class="card-title m-b-2">
+                                    <a href="single-event.html">Food and other supplies.</a>
+                                </h4>
+                <p class="card-text">Any contribution of food and supplies to support the needy and old in RSA.</p>
+                <div class="progress-wrapper m-t-3">
+                  <progress class="progress" value="78" max="100"></progress> <i class="fa fa-map-marker progress-indicator"></i>
+                  <div class="progress-progress clearfix"> <span class="pull-xs-left text-muted">R1734 raised</span> <span class="pull-xs-right font-weight-700">R2100 total</span> </div>
+                </div>
+                <div class="text-xs-center"> <a href="#" class="btn btn-primary m-t-3  shadow-2 shadow-hover-4">
+                                        Donate
+                                    </a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock section %}
+  {% block events %}
+  <div class="section" id="events">
+    <div class="section-background">
+      <div class="section-bg-image
+                  section-bg-image-size-md-cover
+                  section-bg-image-position-xs-middle
+                  demo-bg-image-5 opacity-7
+                  section-bg-image-paralax">
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row m-b-15">
+          <div class="col-md-12">
+            <h1 class="h1 heading-bordered text-capitalize m-t-15 m-b-8 os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".3s">
+              <small class="text-muted font-italic text-xs-light">
+                Upcoming
+              </small> Events.
+             </h1>
+          </div>
+          <div class="col-md-12">
+            <div class="card shadow-8 shadow-hover-16 transition os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".4s">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item transition list-group-item-action shadow-hover-8">
+                      <div class="list-group-item-prefix">
+                        <h2 class="m-b-0">16</h2>
+                        <p class="m-b-0 text-muted">Nov</p>
+                      </div>
+                      <div class="list-group-item-content text-truncate">
+                        <h5 class="list-group-item-title m-b-1 text-truncate">
+                          <a href="single-event.html">
+                            Praise God For His Deliverance From Your Fears
+                          </a>
+                        </h5>
+                        <h6 class="m-b-0 text-truncate">
+                           <i class="fa fa-map-marker text-muted m-r-1"></i> 45 Syntagma Square, in Athens
+                           <i class="fa fa-clock-o text-muted m-l-1"></i> 20:00 am
+                       </h6>
+                      </div>
+                    </li>
+                    <li class="list-group-item transition list-group-item-action shadow-hover-8">
+                      <div class="list-group-item-prefix">
+                        <h2 class="m-b-0">23</h2>
+                        <p class="m-b-0 text-muted">Nov</p>
+                      </div>
+                      <div class="list-group-item-content text-truncate">
+                        <h5 class="list-group-item-title m-b-1 text-truncate">
+                         <a href="single-event.html">
+                           Overcoming Fear In Witnessing
+                         </a>
+                        </h5>
+                        <h6 class="m-b-0 text-truncate">
+                          <i class="fa fa-map-marker text-muted m-r-1"></i> 45 Syntagma Square, in Athens
+                          <i class="fa fa-clock-o text-muted m-l-1"></i> 20:00 am
+                        </h6>
+                        </div>
+                    </li>
+                    <li class="list-group-item transition list-group-item-action shadow-hover-14">
+                      <div class="list-group-item-prefix">
+                        <h2 class="m-b-0">11</h2>
+                        <p class="m-b-0 text-muted">Dec</p>
+                      </div>
+                      <div class="list-group-item-content text-truncate">
+                        <h5 class="list-group-item-title m-b-1 text-truncate">
+                          <a href="single-event.html">
+                            Gifts And Callings Are Without Repentance
+                          </a>
+                        </h5>
+                        <h6 class="m-b-0 text-truncate">
+                        <i class="fa fa-map-marker text-muted m-r-1"></i> 45 Syntagma Square, in Athens
+                        <i class="fa fa-clock-o text-muted m-l-1"></i> 20:00 am
+                      </h6>
+                      </div>
+                    </li>
+                    <li class="list-group-item transition list-group-item-action shadow-hover-8">
+                      <div class="list-group-item-prefix">
+                        <h2 class="m-b-0">12</h2>
+                        <p class="m-b-0 text-muted">Dec</p>
+                      </div>
+                      <div class="list-group-item-content text-truncate">
+                      <h5 class="list-group-item-title m-b-1 text-truncate">
+                         <a href="single-event.html">
+                          Faith Is The Substance
+                         </a>
+                       </h5>
+                        <h6 class="m-b-0 text-truncate">
+                          <i class="fa fa-map-marker text-muted m-r-1"></i> 45 Syntagma Square, in Athens
+                          <i class="fa fa-clock-o text-muted m-l-1"></i> 20:00 am
+                        </h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-img-container">
+                    <img class="card-img" src="assets/images/600x600.png" alt="Card image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock events %}
+  {% block join %}
+  <div class="section" id="join">
+    <div class="section-bg-image section-bg-image-size-md-cover demo-bg-image-7"></div>
+    <div class="section-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 p-y-15 text-xs-center text-xs-light">
+            <h2 class="os-animation" data-os-animation="fadeIn" data-os-animation-delay=".3s">
+              Get in touch with our cause today!
+            </h2>
+            <p class="lead os-animation" data-os-animation="fadeIn" data-os-animation-delay=".4s">
+              Receive weekly updates about various subjects & join Our community.
+            </p>
+            <div class="row">
+              <div class="col-md-6 os-animation" data-os-animation="fadeIn" data-os-animation-delay=".5s">
+                <input id="name" name="name" class="form-control shadow-0 shadow-focus-2 transition" placeholder="Name" type="text"> </div>
+              <div class="col-md-6 os-animation" data-os-animation="fadeIn" data-os-animation-delay=".6s">
+                <input id="email" name="email" class="form-control shadow-0 shadow-focus-2 transition" placeholder="Your Email" type="email"> </div>
+            </div>
+            <a href="#" class="btn btn-danger m-t-3 os-animation m-b-4 shadow-2 shadow-hover-4" data-os-animation="fadeIn" data-os-animation-delay=".7s">
+              Subscribe!
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock join %}
+  {% block gallery %}
+  <div class="section" id="gallery">
+    <div class="section-content">
+      <div class="container">
+        <div class="row m-b-15">
+          <div class="col-md-12">
+            <h1 class="h1 heading-bordered text-capitalize m-t-15 m-b-8 os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".3s">
+              <small class="text-muted font-italic text-xs-light">View</small>
+                Our Gallery.
+            </h1>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-10 shadow-hover-12 transition card-inverse os-animation" 
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".4s">
+              <div class="card-img-container">
+                <a href="#">
+                  <img class="card-img" src="assets/images/560x350.png" alt="Card image">
+                </a>
+              </div>
+              <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-on-hover  transition">
+                <h4 class="card-title transition">Card Image</h4>
+                <p class="card-subtitle transition">Text at the center</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-10 shadow-hover-12 transition card-inverse os-animation" 
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".4s">
+              <div class="card-img-container">
+                <a href="#">
+                  <img class="card-img" src="assets/images/560x350.png" alt="Card image">
+                </a>
+              </div>
+              <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-on-hover  transition">
+                <h4 class="card-title transition">Heros of war</h4>
+                <p class="card-subtitle transition">Photo By Manos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-10 shadow-hover-12 transition card-inverse os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".4s">
+              <div class="card-img-container">
+                <a href="#">
+                  <img class="card-img" src="assets/images/560x350.png" alt="Card image">
+                </a>
+              </div>
+              <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-on-hover  transition">
+                <h4 class="card-title transition">Awards & Medals</h4>
+                <p class="card-subtitle transition">Photo by Johnr</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-10 shadow-hover-12 transition card-inverse os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".7s">
+              <div class="card-img-container">
+                <a href="#">
+                  <img class="card-img" src="assets/images/560x350.png" alt="Card image">
+                </a>
+              </div>
+              <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-on-hover  transition">
+                <h4 class="card-title transition">War momments</h4>
+                <p class="card-subtitle transition">Photo by John</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-10 shadow-hover-12 transition card-inverse os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".8s">
+              <div class="card-img-container">
+                <a href="#">
+                  <img class="card-img" src="assets/images/560x350.png" alt="Card image">
+                </a>
+              </div>
+              <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-on-hover  transition">
+                <h4 class="card-title transition">The front line</h4>
+                <p class="card-subtitle transition">Photo by Mary</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-10 shadow-hover-12 transition card-inverse os-animation"
+                 data-os-animation="fadeIn"
+                 data-os-animation-delay=".9s">
+              <div class="card-img-container">
+                <a href="#">
+                  <img class="card-img" src="assets/images/560x350.png" alt="Card image">
+                </a>
+              </div>
+              <div class="card-img-overlay card-img-overlay-bottom card-img-overlay-on-hover  transition">
+                <h4 class="card-title transition">Moment of ilence</h4>
+                <p class="card-subtitle transition">Photo By Christos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock gallery %}
+  <footer id="footer">
+  {% include "_footer.html" %}
+  </footer>
+  <a href="#" class="go-top shadow-hover-10 hidden-xs-down hide"> <i class="fa fa-angle-up"></i> </a> 
+  {% include "_scripts.html" %} 
+</body>
+{% endblock body %}
