@@ -1,0 +1,18 @@
++++
+title = "Soweto 1 GP (2012)"
+date = 1977-01-13
++++
+
+![Ganas with Soweto 1 GP](/index.jpg)
+
+## Attaining Soweto 1 GP (2012)
+
+It was my daughter Cashane Soobiah, when she was alive, who always wanted me to tell the story about my dark days and purpose in Soweto 1977. The almighty gave me the idea to fulfil her inspiration and my dreams by purchasing an old vintage Morris Minor car which was very popular in the 50’s, 60’s and the 70’s in Europe and most parts of the world. Then I had to label this car with the Soweto brand which was in my favour with a 9 digit registration licence plate. The difficult task was for the registration of this vehicle because my being an Indian would be showing disrespect to the black people living in Soweto. At this particular time, I was not residing in Soweto which made it difficult for me acquiring the number plate of Soweto 1.
+
+Soweto is the main historical landmark of South Africa and the world with its rich resistance to the apartheid laws and regime. As understood in apartheid, a non-white could not own a personalised number plate or even apply for one. Personalised number plates were only issued to the mayors of Cape Town, Durban, Transvaal, Johannesburg and Pretoria. E.g. CA 1, ND 1, TP 1, TJ 1. These personalised number plates are selling today for millions of rands whereas no black South African or any African country has a personalised number plate of any value, therefore Soweto 1 GP stands alone and makes a major difference as being the only black represented South African number plate of significant value in South Africa and globally. I endured many obstacles acquiring the Soweto 1 GP number plate. 
+
+I was also interrogated knowing why I wanted to acquire the Soweto 1 GP number plate. Soweto has a lot of historic and important community leaders and comrades and they were all rejected of the number plate. Being an Indian South African, I have risked and sacrificed everything I had to make Soweto a historic landmark and was successful in including the history of struggle for freedom and democracy notwithstanding the difference of race and colour or area for all South Africans to enjoy with me my success which is Soweto 1 GP. Without the bloodshed, the loss of innocent comrades and childrens lives, struggle and heartache, Soweto 1 GP would have just been another personalised number plate without value. Being an Indian at the young age of 20 years in 1977, I left my family behind in Durban, KZN and moved to Soweto to install the telephone exchange in Kwa-Xuma, which was the source of help needed to communicate with the comrades who were exiled. 
+
+Because I was the 1st Indian in the history of South Africa during the apartheid era to live in Soweto, breaking barriers of the law under the state of emergency and the group areas act, makes me worthy and royalty to be in the possession of the Soweto 1 GP number plate which changes the dynamics of the culture in the location of Soweto. If anyone else owned that number plate, it would have not been of such great historic value and heritage of South Africa. The Soweto 1 GP number plate is the pride status and dignity of the black man around the world. The Soweto 1 GP number plate runs so deep into the untold stories of our history and heritage. Nobody besides myself could have taken the Soweto 1 GP number plate to the next level globally because of my contribution to the struggle. 
+
+I have also trademarked and copyrighted the Soweto 1 brand. Historical references could be found online on Google Soweto 1 GP and Mr. Ganas Soobiah, pictures, interviews and video files, makes excellent advertisement for the history of Soweto.
