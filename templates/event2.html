@@ -1,0 +1,119 @@
+{% extends "base2.html" %}
+
+{% block body %}
+ <body class="tribe_events-template-default single single-tribe_events postid-148 tribe-no-js tribe-filter-live tribe-events-uses-geolocation pace-on pace-double-spinner wpb-js-composer js-comp-ver-6.0.5 vc_responsive events-single tribe-events-style-skeleton tribe-theme-divinity tribe-events-page-template">
+  <div class="pace-overlay"></div>
+  <div class="nav nav-layout-logo-l-menu-r  nav-click  nav-sticky">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="nav-smooth-scroll" data-offset="100"> 
+        <img src="{{ get_url(path="assets/images/logo.png") }}" alt="Allan Ganas Soobiah"> 
+        </a>
+      </div>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#"> <span></span> </a>
+      </div>
+      <nav class="nav-menu">
+        {% include "_nav.html" %} 
+      </nav>
+    </div>
+  </div>
+  {% block content %}
+  <div id="content" role="main">
+    <div class="section">
+      <div class="section-background">
+        <div class="section-bg-image section-bg-image-size-xs-100 section-bg-image-size-md-100 section-bg-image-size-lg-100 section-bg-image-position-xs-top section-bg-image-paralax opacity-4" 
+			 style="background-image: url('../assets/images/01-1600x1000.jpg');">
+		</div>
+      </div>
+      <div class="section-content p-t-3 p-b-9">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="tribe-events" 
+                   class="tribe-no-js" 
+                   data-live_ajax="1" 
+                   data-datepicker_format="0" 
+                   data-category="" 
+                   data-featured="">
+                <div class="tribe-events-before-html"></div>
+                <div class="row">
+                  <div id="tribe-events-content" 
+                       class="tribe-events-single col-md-10 offset-md-1">
+                    <div class="card shadow-8 shadow-hover-16 transition m-b-9">
+                      <div class="card-block">
+                        <h2 class="tribe-events-single-event-title card-title">
+                          {{ page.title }}
+                        </h2>
+                        <h6 class="card-subtitle font-italic text-muted m-b-0">
+                        <i class="fa fa-map-marker"></i> 
+                          {{ page.date }}
+                        </h6>
+                      </div>
+                      <div class="card-img-container"> 
+                       <img width="1000" height="625" 
+                             src="{{page.permalink}}index.jpg"
+                             class="card-img wp-post-image" 
+                             alt="" 
+                             srcset="{{page.permalink}}index.jpg 1000w, {{page.permalink}}index.jpg 300w, {{page.permalink}}index.jpg 768w" 
+                             sizes="(max-width: 1000px) 100vw, 1000px" />
+                        <div class="card-img-overlay card-img-overlay-mini card-img-overlay-top card-img-overlay-right text-xs-center">
+                            <span class="h2 d-block m-b-0">
+                            26
+                            </span>
+                            <span class="d-block">
+                            Feb
+                            </span>
+                            <small class="d-block">
+                            08:00
+                            </small>
+                        </div>
+                      </div>
+                      <div class="card-block">
+                        <!-- Event content -->
+                        <div class="tribe-events-single-event-description tribe-events-content">
+                          {{ page.content | safe }}
+                        </div>
+                        <!-- .tribe-events-single-event-description -->
+                      </div>
+                      <div class="card-footer"> <small>
+                        <i class="fa fa-tags text-muted p-r-1"></i><a href="../../tag/bible/default.htm" rel="tag" class="text-muted">bible</a>, <a href="../../tag/christ/default.htm" rel="tag" class="text-muted">Christ</a>, <a href="../../tag/faith/default.htm" rel="tag" class="text-muted">faith</a>                    </small>
+                        <div class="icon-set icon-set-expandable transition pull-xs-right">
+                          <a class="icon-set-item transition icon-set-item-trigger text-muted" href="#"> <i class="fa fa-share-alt"></i> </a>
+                          <a class="icon-set-item transition icon-set-item-close" href="#"> <i class="fa fa-close"></i> </a>
+                          <a class="icon-set-item icon-set-item-action text-muted transition" href="../../../../https@plus.google.com/share@url=http_3a_2f_2fdivinity.oxygenna.com_2fkings_2fevent_2fprophetic-conference_2f" title="Share on Google+" target="_blank"> <i class="fa fa-google-plus"></i> </a>
+                          <a class="icon-set-item icon-set-item-action text-muted transition" href="../../../../https@twitter.com/share@url=http_3a_2f_2fdivinity.oxygenna.com_2fkings_2fevent_2fprophetic-conference_2f" title="Share on Twitter" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                          <a class="icon-set-item icon-set-item-action text-muted transition" href="../../../../https@www.facebook.com/sharer.php@u=http_3a_2f_2fdivinity.oxygenna.com_2fkings_2fevent_2fprophetic-conference_2f" title="Share on Facebook" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tribe-events-after-html"></div>
+              </div>
+              <!-- #tribe-events -->
+              <!--
+              This calendar is powered by The Events Calendar.
+              http://m.tri.be/18wn
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #tribe-events-pg-template -->
+  </div>
+  {% endblock %}
+  <script>
+    (function (body) {
+      'use strict';
+      body.className = body.className.replace(/\btribe-no-js\b/, 'tribe-js');
+    })(document.body);
+  </script>
+  <footer id="footer">
+  {% include "_footer.html" %}
+  </footer>
+  <a href="#" class="go-top shadow-hover-10 hidden-xs-down hide"> <i class="fa fa-angle-up"></i> </a> 
+  {% include "_scripts.html" %} 
+</body>
+{% endblock body %}
