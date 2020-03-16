@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "http://www.soweto1indian.co.za/"
+base_url = "https://www.soweto1indian.co.za/"
 
 # Used in RSS by default
 title = "Allan Ganas Soobiah"
