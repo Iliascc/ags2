@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block body %}
+<body class="pace-on pace-double-spinner">
+  <div class="pace-overlay"></div>
+  <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an 
+    <strong>outdated</strong> browser. 
+    Please <a href="http://browsehappy.com/">upgrade your browser</a> 
+    to improve your experience.</p>
+  <![endif]-->
+  <div class="nav nav-sticky nav-layout-logo-l-menu-r os-animation"
+       data-os-animation="fadeIn"
+       data-os-animation-delay=".05s">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="/" class="nav-smooth-scroll" data-offset="100"> 
+        <img src="{{ get_url(path="assets/images/logo.png") }}" alt="Allan Ganas Soobiah"> 
+        </a>
+      </div>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#"> <span></span> </a>
+      </div>
+      <nav class="nav-menu">
+        {% include "_nav.html" %} 
+      </nav>
+    </div>
+  </div>
+  {% block home %}
+  <div class="section" id="home">
+    <div class="section-background">
+      <div class="section-bg-image section-bg-image-size-md-100 section-bg-image-position-xs-top demo-bg-image-1 section-bg-image-paralax"></div>
+    </div>
+    <div class="section-content">
+      <div class="container">
+ 
+        
+        <div class="row m-b-15" id="about">
+          <div class="col-md-12">
+          {% block content %}
+          <h3 class="heading-bordered text-capitalize m-b-3">
+            <small class="text-muted font-italic">{{ section.title }}</small>
+                  The News
+          </h3>
+          <div class="row">
+           {% for page in section.pages %}
+            <div class="col-md-4">
+              <div class="card shadow-8 shadow-hover-16 transition m-b-3">
+                <div class="card-img-container">
+                  <img width="1000" 
+                        height="625" 
+                        src="assets/sites/3/2016/12/divinity-09-notinclude-1000x625.jpg" 
+                        class="card-img wp-post-image" 
+                        alt="" 
+                        srcset="assets/sites/3/2016/12/divinity-09-notinclude-1000x625.jpg 1000w, assets/sites/3/2016/12/divinity-09-notinclude-1000x625-300x188.jpg 300w, assets/sites/3/2016/12/divinity-09-notinclude-1000x625-768x480.jpg 768w" 
+                        sizes="(max-width: 1000px) 100vw, 1000px" />
+                        <div class="card-img-overlay card-img-overlay-mini card-img-overlay-top card-img-overlay-right text-xs-center">
+                           <span class="h3 d-block m-b-0">
+                            01</span>
+                          <span class="d-block">
+                            Jan</span>
+                        </div>
+                  </div>
+                  <div class="card-block">
+                    <h3 class="card-title tribe-related-events-title">
+                      <a class="tribe-event-url" href="{{ page.permalink }}" rel="bookmark">
+                      {{ page.title }}</a>
+                    </h3>
+                    <h6 class="card-subtitle font-italic text-muted m-b-0">
+                      <i class="fa fa-map-marker"></i>
+                      Church of New York &#8211; Assembly Hall                                                                , in New York                                        <i class="fa fa-clock-o"></i>
+                      08:00
+                    </h6>
+                   </div>
+              </div>
+          </div>
+           {% endfor %}
+          </div>
+          {% endblock content %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock home %}
+  <footer id="footer">
+  {% include "_footer.html" %}
+  </footer>
+  <a href="#" class="go-top shadow-hover-10 hidden-xs-down hide"> <i class="fa fa-angle-up"></i> </a> 
+  {% include "_scripts.html" %} 
+</body>
+{% endblock body %}
